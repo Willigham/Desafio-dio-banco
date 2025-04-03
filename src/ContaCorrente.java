@@ -1,30 +1,5 @@
-public class ContaCorrente {
+public class ContaCorrente extends Conta {
 
-    private int agencia;
-    private int numero;
-    private double saldo;
+    //o "extends" esta herdando para "classe ContaCorrente" tudo oque está na "class Conta"
 
-    public void sacar(){
-
-    }
-
-    public void depositar(){
-
-    }
-
-    public void transferir(){
-
-    }
-
-    public int getAgencia() {
-        return agencia;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public double getSaldo() {
-        return saldo;
-    }
 }
