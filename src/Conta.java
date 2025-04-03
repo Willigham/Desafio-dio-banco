@@ -1,11 +1,19 @@
 public abstract class Conta implements IConta{
 
     //a "class Conta" é a classe pai de "ContaCorrente e ContaPoupanca"
+    private static final int AGENCIA_PADRAO = 1;
+
+    private static int SEQUENCIAL = 1;
 
     //metodos privados para exibir "agencia, numero, saldo"
-    private int agencia;
-    private int numero;
-    private double saldo;
+    protected int agencia;
+    protected int numero;
+    protected double saldo;
+
+    public Conta(){
+        this.agencia = Conta.AGENCIA_PADRAO;
+        this.numero = SEQUENCIAL++;
+    }
 
     @Override
     public void sacar(int valor) {
